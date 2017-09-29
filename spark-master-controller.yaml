@@ -18,7 +18,7 @@ spec:
             - containerPort: 7077
             - containerPort: 8080
           args :
-            - 'sleep infinity'
+            - ';sleep infinity'
           resources:
             requests:
               cpu: 100m
