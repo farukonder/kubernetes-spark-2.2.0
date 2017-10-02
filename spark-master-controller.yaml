@@ -22,7 +22,7 @@ spec:
             - "-c"
             - "--"
           args :
-            - 'echo $(hostname -i) "spark-master" >> /etc/hosts && /opt/spark/sbin/start-master.sh --ip spark-master --port 7077 && sleep infinity'
+            - '/opt/spark/sbin/start-master.sh --ip spark-master --port 7077 && sleep infinity'
           resources:
             requests:
               cpu: 100m
