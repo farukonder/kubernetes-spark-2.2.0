@@ -17,8 +17,12 @@ spec:
           ports:
             - containerPort: 7077
             - containerPort: 8080
+          command:
+            - "/bin/bash"
+            - "-c"
+            - "--"
           args :
-            - sleep infinity
+            - '/opt/spark/sbin/start-master.sh --ip spark-master --port 7077; sleep infinity'
           resources:
             requests:
               cpu: 100m
