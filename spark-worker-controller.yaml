@@ -1,19 +1,19 @@
 kind: ReplicationController
 apiVersion: v1
 metadata:
-  name: spark-master-controller
+  name: spark-worker
 spec:
   replicas: 1
   selector:
-    component: spark-master
+    component: spark-worker
   template:
     metadata:
       labels:
-        component: spark-master
+        component: spark-worker
     spec:
       containers:
         - name: spark-master
-          image: faruk/kube-master-spark-2.2.0-h2.6
+          image: faruk/kube-worker-spark-2.2.0-h2.6
           ports:
             - containerPort: 7077
             - containerPort: 8080
