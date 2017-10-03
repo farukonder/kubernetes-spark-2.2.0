@@ -9,6 +9,7 @@ spec:
       name: spark
     - port: 8080
       targetPort: 8080
+      nodePort: 80
       name: http
   type: NodePort
   selector:
