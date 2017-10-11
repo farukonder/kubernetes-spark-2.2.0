@@ -9,5 +9,3 @@ spec:
   selector:
     component: zeppelin
   type: NodePort
-    selector:
-    component: zeppelin
