@@ -4,7 +4,10 @@ metadata:
   name: zeppelin
 spec:
   ports:
-    - targetPort: 8080
+    - port: 8080
+      targetPort: 8080
   selector:
     component: zeppelin
   type: NodePort
+    selector:
+    component: zeppelin
